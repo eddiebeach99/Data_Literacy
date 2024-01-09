@@ -1,0 +1,8 @@
+# MacOS directory files
+.DS_Store
+
+# pycache
+__pycache__
+
+# Data
+Merged_Data/
