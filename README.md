@@ -1,4 +1,4 @@
-# Data_Literacy
+# Data Literacy
 
 This our code to our Data Literacy project about the complexity of Lego sets. For this we used the Rebrickable (https://rebrickable.com/downloads/) dataset about Lego sets between 1949 and 2024.
 
