@@ -137,17 +137,13 @@
 
 \begin{abstract}
 
-In our Data Literacy project, we aimed to determine if the complexity of Lego sets has been increasing since the beginning of Lego production. Using exponential and linear regression, as well as cluster analysis, our findings consistently indicated a noticeable upward trend in set complexity over the years.
+In our Data Literacy project, we aimed to determine if the complexity of Lego sets has been increasing since the beginning of Lego production. Using exponential and linear regression, as well as cluster analysis, our findings consistently indicated a noticeable upward trend in set complexity over the years, especially in the recent years.
 
 \end{abstract}
 
 \section{Introduction}\label{sec:intro}
 As Lego enthusiasts and researchers, we wanted to work with a Lego dataset. After an exploratory analysis of the dataset we saw that different numbers such as mean number of total parts per set, mean number of different parts and unique parts, number of colors and minifigures increased over the years. We started to wonder, if we could say that the complexity of Lego sets in terms of production increased over the years. \\
-
-Value ...
-
-\\
-
+Lego sets are culturally important, known and enjoyed by every child in our society. Some individuals even continue to engage with Lego into adulthood, collecting sets. Understanding evolution of production complexity adds valuable insights into the evolving dynamics of entertainment and creativity, as a higher production complexity likely results in the creation of more complicated Lego sets in terms of building.
 In the following sections, we detail the methods and data used for our complexity analysis. This involves a comprehensive exploration of the Rebrickable dataset, encompassing details on Lego sets released between 1949 and 2024. We describe the formulation of the complexity metric, its normalization, and the subsequent linear and exponential regressions modeling for predicting mean complexity per year until 2030. Additionally, a k-means clustering analysis is detailed, outlining the optimal number of clusters based on the complexity metric.
 
 
@@ -158,7 +154,7 @@ For our project we used the \href{https://rebrickable.com/downloads/}{Rebrickabl
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{inverted_database.png}}
+ \centerline{\includegraphics[width=\columnwidth]{Images/inverted_database.png}}
  \quelle\url{https://rebrickable.com/downloads/}
 \caption{Structure of the Rebrickable Dataset}
 \label{icml-historical}
@@ -168,7 +164,7 @@ For our project we used the \href{https://rebrickable.com/downloads/}{Rebrickabl
 
 
 
-Everything was implemented in python and can be found in a \href{https://github.com/eddiebeach99/Data_Literacy/tree/development}{git repository}. In our analysis used the "sklearn" libary for regression and clustering. \\
+Everything was implemented in python and can be found in a \href{https://github.com/eddiebeach99/Data_Literacy/tree/main}{git repository}. In our analysis used the "sklearn" libary for regression and clustering. \\
 The initial data processing involved merging classes into two comprehensive datasets. The first integration combined part categories with parts, yielding an extensive list of detailed part information. Subsequently, categories, parts, inventory parts, and colors were integrated to form a dataset detailing parts within inventories, including color specifications. For the second dataset, the minifigs class were merged with inventory minifigs to extract specific information about minifigures within inventories. The dataset was refined by filtering themes for main themes and establishing connections between sets and themes.\\
 In the subsequent merging phase, the sets with themes dataset was combined with datasets containing information about parts and minifigures, resulting in two distinct datasets – one focused on parts in different sets and there characteristics and the other on minifigures in different sets. To maintain relevance, the datasets were filtered to include only data up to the year 2023, ensuring the incorporation of completed years.\\
 The final step involved creating a consolidated dataset by grouping data using the set number. The grouped dataset included pertinent details for each set such as release year, theme, total number of part and number of different parts, minifigure quantities, color diversity, category variety, counts of unique parts (quantity of one in the set), and the proportion of unique to not unique parts within each set.\\
@@ -200,9 +196,8 @@ where
  MaxComp  &  Maximal complexity across all sets \\
 \end{conditions*}
 
-Subsequently, a linear and exponential regression was employed to model the mean complexity per year, providing predictions until 2030. We compared the Sum of Squared Residuals (SSR) and Coefficient of Determination ($R^2$) to find the regression that better fits the data.\\
+Subsequently, a linear and exponential regression was employed to model the mean complexity per year, providing predictions until 2030. We visually compared the two regression lines and assessed their fit through the examination of the Sum of Squared Residuals (SSR) and Coefficient of Determination ($R^2$) to find the regression that better fits the data. We additionally checked for overfitting or underfitting using cross-validation, which is a good and simple approach to identify such issues in regression models \cite{emmert2019evaluation}. \\
 Additionally, a k-means clustering analysis, guided by the elbow method, was conducted to determine the optimal number of clusters based on the complexity metric.
-
 
 
 % This is the template for a figure from the original ICML submission pack. In lecture 10 we will discuss plotting in detail.
@@ -223,7 +218,7 @@ Additionally, a k-means clustering analysis, guided by the elbow method, was con
 % \end{figure}
 
 \section{Results}\label{sec:results}
-We started with an exploratory phase were we plotted different features of Lego sets. For each year we plotted the number of released sets, mean part count per set, mean different parts per set, mean minifigures per set, themes per year, mean part categories per set, mean colors per set, the number of different colors, and mean unique parts per set (see Figure 2).
+We started with an exploratory phase were we plotted different features of Lego sets. For each year we plotted the number of released sets, mean part count per set, mean different parts per set, mean minifigures per set, themes per year, mean part categories per set, mean colors per set, the number of different colors, and mean unique parts per set. Additionally, we employed a logarithmic transformation on the y-axis to identify any  upward or downward trends (see Figure 2).
 
 \begin{figure}[ht]
  \vskip 0.2in
@@ -235,7 +230,7 @@ We started with an exploratory phase were we plotted different features of Lego 
  \vskip -0.2in
 \end{figure}
 
-Afterwards we focused our analysis on the complexity of the production of different Lego sets. We performed a linear regression ($SSR = 0.0039$, $R^2= 0.5742$) and exponential regression ($SSR = 0.0035$, $R^2= 0.6132$) for the average complexity per set per year with a prediction until 2030 (see Figure 3). Further visualisation can be found on \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/complexity_regression.ipynb}{github}.
+Afterwards we focused our analysis on the complexity of the production of different Lego sets. We performed a linear regression ($SSR = 0.002$, $R^2= 0.724$) and exponential regression ($SSR = 0.002$, $R^2= 0.794$) for the average complexity per set per year with a prediction until 2030 (see Figure 3). We tested the two models for overfitting or underfitting with cross-validation. we observed that both models show a minimal higher mean of the Root Mean Square Error (RMSE) on the test set compared to the training set (linear regression: $RMSE_{training} = 0.006$, $RMSE_{test} = 0.006$, $RMSE_{differnce} = 0.001$ exponential regression: $RMSE_{training} = 0.005$, $RMSE_{test} = 0.004$, $RMSE_{differnce} = 0.001$). Further visualisation, like the plotted distribution of the complexity score, can be found in the \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/complexity_regression.ipynb}{regression file on github}.
 
 \begin{figure}[ht]
  \vskip 0.2in
@@ -247,12 +242,12 @@ Afterwards we focused our analysis on the complexity of the production of differ
  \vskip -0.2in
 \end{figure}
 
-We then performed a k-means clustering, that aimed to group the data based on complexity with the elbow method, which set the optimal number of clusters to three. Afterwards we compared the average complexity scores in the different clusters (Cluster 0: $0.0599$, Cluster 1: $0.0092$, Cluster 2: $0.2685$), set the complexity level of the clusters from low to high (Cluster 0: Medium, Cluster 1: Low, Cluster 2: High) and visualized the distribution of sets across different clusters (see Figure 4). Further visualisation can be found on \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/clustering.ipynb}{github}.
+We then performed a k-means clustering, that aimed to group the data based on complexity with the elbow method, which set the optimal number of clusters to three. Afterwards we compared the average complexity scores in the different clusters (Cluster 0: $0.009$, Cluster 1: $0.06$, Cluster 2: $0.272$), set the complexity level of the clusters from low to high (Cluster 0: Low, Cluster 1: Medium, Cluster 2: High) and visualized the distribution of sets across different clusters (see Figure 4). Further visualisation, like the top ten themes in the different complexity clusters, can be found in the \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/clustering.ipynb}{clustering file on github}.
 
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{Images/Clusters.pdf}}
+ \centerline{\includegraphics[width=\columnwidth]{Clustering.jpeg}}
 \caption{Proportion of sets in the different clusters}
 \label{icml-historical}
  \end{center}
@@ -261,15 +256,15 @@ We then performed a k-means clustering, that aimed to group the data based on co
 
 \section{Discussion \& Conclusion}\label{sec:conclusion}
 
-After data preparation, we started to explore the data to discern trends in Lego set features over the years. For each year we plotted the number of released sets, mean part count per set, mean different parts per set, mean minifigures per set, themes per year, mean part categories per set, mean colors per set, the number of different colors, and mean unique parts per set (see Figure 2). We can see that all the numbers are increasing over the years, which led us to suspect that the complexity Lego sets, in terms of production, could be increasing as well. \\
-To test this hypothesis, we started to introduce a complexity measure in terms of production and calculated it for each set. We then calculated a linear and exponential regression for the mean complexity for a set. We can see for both regressions that the mean complexity is increasing and that the prediction of complexity is as well. We can also see that the exponential regression provides a better fit to the data, evidenced by a lower SSR and a higher $R^2$ value. \\
-In the Cluster analysis of the proportion of sets in the different complexity levels, we can see similar findings. The complexity started really low but increased over the years. More and more sets started to be in the clusters with a medium and high complexity, while the number of sets with low complexity are decreasing. \\
-
-A limitation is that the number of lego sets is increasing as well?
+After data preparation, we started to explore the data to discern trends in Lego set features over the years. For each year we plotted the number of released sets, mean part count per set, mean different parts per set, mean minifigures per set, themes per year, mean part categories per set, mean colors per set, the number of different colors, and mean unique parts per set. Additionally, we employed a logarithmic transformation (log y) to facilitate the detection of increasing or decreasing trends (see Figure 2). We can see that all the numbers are increasing over the years, which led us to suspect that the complexity Lego sets, in terms of production, could be increasing as well. \\
+To test this hypothesis, we started to introduce a complexity measure in terms of production and calculated it for each set. We then calculated a linear and exponential regression for the mean complexity for a set. We can see for both regressions that the mean complexity is increasing and that the prediction of complexity is as well. We can also see that the exponential regression provides a better fit to the data (see Figure 3), this is supported by a lower SSR and a higher $R^2$ value. We furthermore performed a cross-validation to check for overfitting or underfitting. The results suggest a really slight overfitting in both cases, as the models performed better on the training data than on unseen test data. But this difference is so small, that we don't assume an overfitting. The exponential regression model exhibits a little bit lower RMSE values, suggesting superior learning and a better fit to the data. We therefore conclude that the complexity has experienced exponential growth. \\
+In the cluster analysis of the proportion of sets in the different complexity levels, we can see similar findings. The complexity started really low but increased over the years. More and more sets started to be in the clusters with a medium and high complexity, while the number of sets with low complexity are decreasing. 
+Regression and cluster analysis both lead us to the assumption that in recent years, there is a noticeable increase in sets with a high complexity, contributing to an overall upward trend in complexity.\\
+A possible limitation to those findings are that the overall number of sets is increasing over the years as well. Another noteworthy aspect is the impact of the number of released sets on the mean complexity in a specific year, particularly evident in earlier years where only a few sets were released. This limited set count significantly influences the mean complexity for that specific year, leading to a higher susceptibility to fluctuations due to the substantial impact of a small dataset. As a consequence, there is a notable high fluctuation in complexity in the earlier years (see Figure 3), specifically those with a set count below ten (1949, 1950, 1953, 1959, 1960) or even no releases (1951 and 1952). However, this volatility stabilizes in later years (see Figure 3), after 1960 there are stable 20 sets or more released, after 1975 more than 50 and after 1988 more than 100. Due to this stabilization, our data remains interpretable. We especially observe an upward trend in complexity in the recent years (see Figure 3 and Figure 4) where the number of sets and with that the complexity scores already stabilized. 
 
 \section*{Contribution Statement}
 
-Patricia Schlegel prepared data, calculated the complexity for each Lego set and made first exploratory analyses, which included the two regressions of the complexity. Edward Beach performed the k-means clustering and revised the plots for the report. All authors jointly wrote the text of the report.
+Patricia Schlegel prepared the data, calculated the complexity for each Lego set, made first exploratory analyses and the two regressions of the complexity. Edward Beach performed the k-means clustering and revised the plots for the report. All authors jointly wrote the text of the report.
 
 \section*{Notes} 
 
