@@ -10,3 +10,12 @@ The different analysis files can be run independently from each other.
 * An exploratory analysis of the Lego dataset is implemented in the exploratory_analysis.ipynb
 * A linear and an exponential Regression of the complexity of Lego sets is implemented in complexity_regression.ipynb
 * A clustering and further analysis of the clusters of the complexity of Lego sets is implemented in clustering.ipynb
+
+## Required packages
+* math
+* matplotlib
+* numpy 
+* pandas
+* scipy
+* seaborn
+* sklearn
