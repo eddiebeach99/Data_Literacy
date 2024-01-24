@@ -154,7 +154,7 @@ For our project we used the \href{https://rebrickable.com/downloads/}{Rebrickabl
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{Images/inverted_database.png}}
+ \centerline{\includegraphics[width=\columnwidth]{../Images/inverted_database.png}}
  \quelle\url{https://rebrickable.com/downloads/}
 \caption{Structure of the Rebrickable Dataset}
 \label{icml-historical}
@@ -223,7 +223,7 @@ We started with an exploratory phase were we plotted different features of LEGO 
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{Images/Exploration.pdf}}
+ \centerline{\includegraphics[width=\columnwidth]{../Images/Exploration.pdf}}
 \caption{Trends of different features of LEGO sets over the years}
 \label{icml-historical}
  \end{center}
@@ -235,7 +235,7 @@ Afterwards we focused our analysis on the complexity of the production of differ
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{Images/Regressions.pdf}}
+ \centerline{\includegraphics[width=\columnwidth]{../Images/Regressions.pdf}}
 \caption{Exponential and linear regression of the mean complexity for a LEGO set per year with predictions until 2030}
 \label{icml-historical}
  \end{center}
@@ -247,7 +247,7 @@ We then performed a k-means clustering, that aimed to group the data based on co
 \begin{figure}[ht]
  \vskip 0.2in
  \begin{center}
- \centerline{\includegraphics[width=\columnwidth]{Images/Clusters.pdf}}
+ \centerline{\includegraphics[width=\columnwidth]{../Images/Clusters.pdf}}
 \caption{Proportion of sets in the different clusters}
 \label{icml-historical}
  \end{center}
@@ -261,6 +261,8 @@ To test this hypothesis, we started to introduce a complexity measure in terms o
 In the cluster analysis of the proportion of sets in the different complexity levels, we can see similar findings. The complexity started really low but increased over the years. More and more sets started to be in the clusters with a medium and high complexity, while the number of sets with low complexity are decreasing. 
 Regression and cluster analysis both lead us to the assumption that in recent years, there is a noticeable increase in sets with a high complexity, contributing to an overall upward trend in complexity.\\
 A possible limitation to those findings are that the overall number of sets is increasing over the years as well. Another noteworthy aspect is the impact of the number of released sets on the mean complexity in a specific year, particularly evident in earlier years where only a few sets were released. This limited set count significantly influences the mean complexity for that specific year, leading to a higher susceptibility to fluctuations due to the substantial impact of a small dataset. As a consequence, there is a notable high fluctuation in complexity in the earlier years (see Figure 3), specifically those with a set count below ten (1949, 1950, 1953, 1959, 1960) or even no releases (1951 and 1952). However, this volatility stabilizes in later years (see Figure 3), after 1960 there are stable 20 sets or more released, after 1975 more than 50 and after 1988 more than 100. Due to this stabilization, our data remains interpretable. We especially observe an upward trend in complexity in the recent years (see Figure 3 and Figure 4) where the number of sets and with that the complexity scores already stabilized. 
+
+We conclude that the production complexity of LEGO sets experiences exponential growth, characterized by the release of increasingly complex sets and a decrease in simpler ones.
 
 \section*{Contribution Statement}
 
