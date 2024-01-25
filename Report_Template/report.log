@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.16)  24 JAN 2024 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.16)  25 JAN 2024 17:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -822,6 +822,12 @@ LaTeX Warning: Label `icml-historical' multiply defined.
 
 LaTeX Warning: Label `icml-historical@cref' multiply defined.
 
+
+LaTeX Warning: Label `icml-historical' multiply defined.
+
+
+LaTeX Warning: Label `icml-historical@cref' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
@@ -987,53 +993,65 @@ File: ../Images/Regressions.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../Images/Regressions.pdf  used on input line 238.
 (pdftex.def)             Requested size: 234.8775pt x 234.87912pt.
 [2]
-<../Images/Clusters.pdf, id=77, 578.16pt x 578.16pt>
+<../Images/Clusters_features.pdf, id=77, 578.16pt x 361.35pt>
+File: ../Images/Clusters_features.pdf Graphic file (type pdf)
+<use ../Images/Clusters_features.pdf>
+Package pdftex.def Info: ../Images/Clusters_features.pdf  used on input line 25
+0.
+(pdftex.def)             Requested size: 234.8775pt x 146.79808pt.
+<../Images/Clusters.pdf, id=78, 578.16pt x 578.16pt>
 File: ../Images/Clusters.pdf Graphic file (type pdf)
 <use ../Images/Clusters.pdf>
-Package pdftex.def Info: ../Images/Clusters.pdf  used on input line 250.
+Package pdftex.def Info: ../Images/Clusters.pdf  used on input line 260.
 (pdftex.def)             Requested size: 234.8775pt x 234.87692pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.264 
+l.274 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.264 
-       <../Images/Exploration.pdf> <../Images/Regressions.pdf>]
-Underfull \vbox (badness 1874) has occurred while \output is active []
+l.274 
+       <../Images/Exploration.pdf> <../Images/Regressions.pdf>] (./report.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-(./report.bbl) [4pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.4}) has been already used, duplicate ignored
+) [4pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.279 \end{document}
-                     <../Images/Clusters.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
+l.289 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.289 \end{document}
+                     <../Images/Clusters_features.pdf> <../Images/Clusters.pdf>
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
  ) 
 Here is how much of TeX's memory you used:
- 22467 strings out of 480608
- 422359 string characters out of 5903630
+ 22477 strings out of 480608
+ 422610 string characters out of 5903630
  707808 words of memory out of 5000000
- 37700 multiletter control sequences out of 15000+600000
- 563718 words of font info for 177 fonts, out of 8000000 for 9000
+ 37705 multiletter control sequences out of 15000+600000
+ 563837 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,83p,1143b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1047,10 +1065,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on report.pdf (4 pages, 362294 bytes).
+Output written on report.pdf (4 pages, 376302 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 29313 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 29318 words of extra memory for PDF output out of 29859 (max. 10000000)
 
