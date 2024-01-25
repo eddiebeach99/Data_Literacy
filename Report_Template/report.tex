@@ -242,7 +242,17 @@ Afterwards we focused our analysis on the complexity of the production of differ
  \vskip -0.2in
 \end{figure}
 
-We then performed a k-means clustering, that aimed to group the data based on complexity with the elbow method, which set the optimal number of clusters to three. Afterwards we compared the average complexity scores in the different clusters (Cluster 0: $0.009$, Cluster 1: $0.06$, Cluster 2: $0.272$), set the complexity level of the clusters from low to high (Cluster 0: Low, Cluster 1: Medium, Cluster 2: High) and visualized the distribution of sets across different clusters (see Figure 4). Further visualisation, like the top ten themes in the different complexity clusters, can be found in the \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/clustering.ipynb}{clustering file on github}.
+We then performed a k-means clustering, that aimed to group the data based on complexity with the elbow method, which set the optimal number of clusters to three. Afterwards we compared the average complexity scores in the different clusters (Cluster 0: $0.009$, Cluster 1: $0.06$ , Cluster 2: $0.273$) and the proportional number of different features in the clusters (see Figure 4), set the complexity level of the clusters from low to high (Cluster 0: Low, Cluster 1: Medium, Cluster 2: High) and visualized the distribution of sets across different clusters (see Figure 5). Further visualisation, like the top ten themes in the different complexity clusters, can be found in the \href{https://github.com/eddiebeach99/Data_Literacy/blob/main/Analysis/clustering.ipynb}{clustering file on github}.
+
+\begin{figure}[ht]
+ \vskip 0.2in
+ \begin{center}
+ \centerline{\includegraphics[width=\columnwidth]{../Images/Clusters_features.pdf}}
+\caption{Proportion of features in the different clusters}
+\label{icml-historical}
+ \end{center}
+ \vskip -0.2in
+\end{figure}
 
 \begin{figure}[ht]
  \vskip 0.2in
