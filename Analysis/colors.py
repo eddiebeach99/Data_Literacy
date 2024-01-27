@@ -1,5 +1,6 @@
 # Colors for the report plots
 
-orange = '#FF9019'
+bright_yellow = '#FFD700'
 yellow = '#F6BE00'
+orange = '#FF9019'
 red = 'darkred'
