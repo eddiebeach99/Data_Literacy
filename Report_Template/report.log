@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.16)  25 JAN 2024 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.16)  27 JAN 2024 02:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,14 +952,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []$\OT1/ptm/m/n/9 (+20) Matrikelnummer 5480232, patricia.schlegel@student.uni-
  []
 
-<../Images/inverted_database.png, id=37, 1611.01875pt x 866.23625pt>
+
+Package natbib Warning: Citation `legocomplexity' on page 1 undefined on input 
+line 145.
+
+<../Images/inverted_database.png, id=38, 1611.01875pt x 866.23625pt>
 File: ../Images/inverted_database.png Graphic file (type png)
 <use ../Images/inverted_database.png>
 Package pdftex.def Info: ../Images/inverted_database.png  used on input line 15
-7.
+6.
 (pdftex.def)             Requested size: 234.8775pt x 126.28175pt.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-58.
+57.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -967,7 +971,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+Package natbib Warning: Citation `legocomplexity' on page 1 undefined on input 
+line 166.
+
+
+Package natbib Warning: Citation `legocomplexity' on page 1 undefined on input 
+line 166.
+
+<../Images/Exploration.pdf, id=41, 542.025pt x 505.89pt>
+File: ../Images/Exploration.pdf Graphic file (type pdf)
+<use ../Images/Exploration.pdf>
+Package pdftex.def Info: ../Images/Exploration.pdf  used on input line 170.
+(pdftex.def)             Requested size: 234.8775pt x 219.21896pt.
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
@@ -976,84 +994,83 @@ s been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.173 
-       <../Images/inverted_database.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+l.178 \[
+        Comp = Parts + Diff + Cat + Uniq + Col + Figs\] <../Images/inverted_dat
+abase.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- []
-
-<../Images/Exploration.pdf, id=60, 867.24pt x 722.7pt>
-File: ../Images/Exploration.pdf Graphic file (type pdf)
-<use ../Images/Exploration.pdf>
-Package pdftex.def Info: ../Images/Exploration.pdf  used on input line 226.
-(pdftex.def)             Requested size: 234.8775pt x 195.72708pt.
-<../Images/Regressions.pdf, id=62, 650.43pt x 650.43pt>
-File: ../Images/Regressions.pdf Graphic file (type pdf)
-<use ../Images/Regressions.pdf>
-Package pdftex.def Info: ../Images/Regressions.pdf  used on input line 238.
-(pdftex.def)             Requested size: 234.8775pt x 234.87912pt.
-[2]
-<../Images/Clusters_features.pdf, id=77, 578.16pt x 361.35pt>
-File: ../Images/Clusters_features.pdf Graphic file (type pdf)
-<use ../Images/Clusters_features.pdf>
-Package pdftex.def Info: ../Images/Clusters_features.pdf  used on input line 25
-0.
-(pdftex.def)             Requested size: 234.8775pt x 146.79808pt.
-<../Images/Clusters.pdf, id=78, 578.16pt x 578.16pt>
-File: ../Images/Clusters.pdf Graphic file (type pdf)
-<use ../Images/Clusters.pdf>
-Package pdftex.def Info: ../Images/Clusters.pdf  used on input line 260.
-(pdftex.def)             Requested size: 234.8775pt x 234.87692pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.274 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
+l.198 S
+       ubsequently, a linear and exponential regression was employed to mode...
+ <../Images/Exploration.pdf>]
+<../Images/Regressions.pdf, id=119, 542.025pt x 433.62pt>
+File: ../Images/Regressions.pdf Graphic file (type pdf)
+<use ../Images/Regressions.pdf>
+Package pdftex.def Info: ../Images/Regressions.pdf  used on input line 206.
+(pdftex.def)             Requested size: 234.8775pt x 187.90198pt.
+<../Images/Clusters_features.pdf, id=121, 542.025pt x 505.89pt>
+File: ../Images/Clusters_features.pdf Graphic file (type pdf)
+<use ../Images/Clusters_features.pdf>
+Package pdftex.def Info: ../Images/Clusters_features.pdf  used on input line 21
+6.
+(pdftex.def)             Requested size: 234.8775pt x 219.21896pt.
+<../Images/Clusters.pdf, id=122, 542.025pt x 433.62pt>
+File: ../Images/Clusters.pdf Graphic file (type pdf)
+<use ../Images/Clusters.pdf>
+Package pdftex.def Info: ../Images/Clusters.pdf  used on input line 225.
+(pdftex.def)             Requested size: 234.8775pt x 187.90198pt.
 
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.274 
-       <../Images/Exploration.pdf> <../Images/Regressions.pdf>] (./report.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [4pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
-) has been already used, duplicate ignored
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.289 \end{document}
+l.239 
+       <../Images/Regressions.pdf>] (./report.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.250 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.289 \end{document}
+l.250 \end{document}
                      <../Images/Clusters_features.pdf> <../Images/Clusters.pdf>
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 22477 strings out of 480608
- 422610 string characters out of 5903630
- 707808 words of memory out of 5000000
+ 22470 strings out of 480608
+ 422540 string characters out of 5903630
+ 708807 words of memory out of 5000000
  37705 multiletter control sequences out of 15000+600000
- 563837 words of font info for 179 fonts, out of 8000000 for 9000
+ 563517 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,83p,1143b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,83p,1330b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -1065,10 +1082,10 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on report.pdf (4 pages, 376302 bytes).
+Output written on report.pdf (4 pages, 382970 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
  29318 words of extra memory for PDF output out of 29859 (max. 10000000)
 
