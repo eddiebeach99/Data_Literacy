@@ -1,9 +1,11 @@
 # Data Literacy - The Evolution of Design Complexity in LEGO Sets
 
-This our code to our Data Literacy project about the design complexity of LEGO sets. For this we used the Rebrickable (https://rebrickable.com/downloads/) database about LEGO sets between 1949 and 2024.
+This repository cointains the code to our Data Literacy project about the design complexity of LEGO sets. 
+Therefore we used the Rebrickable (https://rebrickable.com/downloads/) database with information on LEGO sets 
+between 1949 and 2024.
 
 ## How to use
-First of all run the data_preperation.ipynb file to get the data (only needed to run exploratory_analysis.ipynb). 
+First run the data_preperation.ipynb file to receive the data (only needed to run exploratory_analysis.ipynb). 
 The different analysis files can be run independently from each other.
 
 ## Different analyses
