@@ -1,4 +1,4 @@
-# Data Literacy
+# Data Literacy - The Evolution of Design Complexity in LEGO Sets
 
 This our code to our Data Literacy project about the complexity of LEGO sets. For this we used the Rebrickable (https://rebrickable.com/downloads/) dataset about LEGO sets between 1949 and 2024.
 
