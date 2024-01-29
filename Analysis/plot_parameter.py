@@ -9,3 +9,5 @@ plt.rcParams['font.size'] = 21
 plt.rcParams['font.family'] = 'Times'
 plt.rcParams['axes.labelsize'] = 21
 plt.rcParams['axes.titlesize'] = 21
+plt.rcParams['xtick.labelsize'] = 16
+plt.rcParams['ytick.labelsize'] = 16
